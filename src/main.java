@@ -13,8 +13,6 @@ public class main {
     public static void main(String[] args){
 
         String[] recipients = {"mlal123@live.unc.edu"};
-        String appID = "371180186620145";
-        String appSecret = "66970c2d539a5a0f54da9530";
 
         FacebookClient.AccessToken accessToken = new DefaultFacebookClient().obtainAppAccessToken(appID, appSecret);
         String token = accessToken.getAccessToken();
